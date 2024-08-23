@@ -1,0 +1,66 @@
+@media screen and (min-width: 992px) {
+  header .navbar-nav {
+    gap: 50px;
+  }
+  .nav-link--hover {
+    border-top: transparent solid 1px;
+  }
+  .nav-link--hover:hover {
+    border-top: solid #48cae4 1px;
+  }
+  .hero-title {
+    width: 50%;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .hero-title {
+    width: 55%;
+    left: 40%;
+  }
+}
+.separator-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #48cae4;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.div-dots {
+  border: 2px lightgray solid;
+  border-radius: 50%;
+  position: relative;
+  color: #48cae4;
+  animation: 3s linear infinite running animatedLoop;
+}
+.div-dots::after {
+  display: block;
+  position: absolute;
+  content: "";
+  background-color: #48cae4;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -5px;
+}
+.div-dots .dots {
+  animation: 3s linear infinite running animatedLoopReverse;
+}
+
+@keyframes animatedLoop {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animatedLoopReverse {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
